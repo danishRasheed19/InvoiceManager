@@ -21,5 +21,6 @@ public class InvoiceController {
     @GetMapping("/{id}")
     public InvoiceResponse getById(@PathVariable Long id){
         return DtoMapper.toDTO(invoiceService.getById(id));
+
     }
 }
